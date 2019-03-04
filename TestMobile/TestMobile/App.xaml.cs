@@ -21,9 +21,9 @@ namespace TestMobile
         protected override void OnStart()
         {
             // Handle when your app starts
-            AppCenter.Start("ios=0723d1a2-56c6-4319-9904-f3cbe71befd6;" +
+            AppCenter.Start("android=70979579-1f74-4119-860c-ce605a694244;" +
                   "uwp={Your UWP App secret here};" +
-                  "android={Your Android App secret here}",
+                  "ios={Your iOS App secret here}",
                   typeof(Analytics), typeof(Crashes));
         }
 
