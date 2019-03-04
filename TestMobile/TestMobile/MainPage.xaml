@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestMobile.MainPage"
+             Title="Catálogo de Usuarios">
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="10" BackgroundColor="White">
+            <!-- Place new controls here -->
+            <Entry x:Name="entUsuario" Placeholder="Usuario" />
+            <Entry x:Name="entPassword" Placeholder="Password" IsPassword="True" />
+            <Entry x:Name="entNombre" Placeholder="Nombre" />
+            <StackLayout>
+                <Label Text="Perfil" />
+                <Picker x:Name="pkPerfil" SelectedIndexChanged="PkPerfil_SelectedIndexChanged" ></Picker>
+                <Label x:Name="lblIdPerfil" IsVisible="False" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Activo" VerticalOptions="Center"/>
+                <Switch x:Name="swtActivo" VerticalOptions="Center" IsToggled="True" />
+            </StackLayout>
+            <Button x:Name="btnAgregar" Text="Agregar" BackgroundColor="Gray" TextColor="White" Clicked="BtnAgregar_Clicked" />
+            <ListView x:Name="lstListado" ItemSelected="LstListado_ItemSelected">
+
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

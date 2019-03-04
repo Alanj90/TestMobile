@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestMobile.Vistas.Login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <ScrollView>
+                <Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <StackLayout Grid.Row="0">
+                            <Image Source="DevlopmentTI.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"></Image>
+                            <Label Text="Aplicación de Prueba" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        </StackLayout>
+
+
+                        <StackLayout Grid.Row="1" Padding="30,20">
+                            <Entry x:Name="entUsuario" Placeholder="Usuario" Text=""></Entry>
+                            <Entry x:Name="entPassword" Placeholder="Password" IsPassword="True" Text=""></Entry>
+                            <Button Text="Ingresar" BackgroundColor="Blue" TextColor="White" BorderRadius="10" x:Name="btnIngresar" Clicked="BtnIngresar_Clicked"></Button>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
